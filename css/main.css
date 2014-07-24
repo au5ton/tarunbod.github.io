@@ -1,3 +1,7 @@
 body {
+<<<<<<< HEAD
 	background-image: url("../res/img/andromeda.jpg");
+=======
+	background-image: url(../res/img/andromeda.jpg)
+>>>>>>> 9e032bc8d51cfd191dba46fbc52a61e5200ad71b
 }
