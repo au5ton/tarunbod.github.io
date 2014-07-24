@@ -30,5 +30,5 @@ body {
 
 #motd {
 	-webkit-transform: rotate(-10deg);
-	left: 10%;
+	margin-left: 10%;
 }
