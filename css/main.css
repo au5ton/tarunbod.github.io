@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Minecraftia";
+	src: url("../res/font/Minecraftia.ttf");
+}
+
 body {
 	background-image: url("../res/img/andromeda.jpg");
 	background-color: #000000;
@@ -7,6 +12,7 @@ body {
 }
 
 #container {
+	font-family: "Minecraftia";
 	margin: 50px 50px 50px 50px;
 	background-color: rgba(255,255,255,0.7);
 	text-indent: 25px;
