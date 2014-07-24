@@ -27,8 +27,3 @@ body {
 #noIndent {
 	text-indent: 0px;
 }
-
-#motd {
-	-webkit-transform: rotate(-10deg);
-	margin-left: 270px;
-}
