@@ -28,15 +28,3 @@ body {
 #noIndent {
 	text-indent: 0px;
 }
-
-.projectInfo {
-	background-color: rgba(255,0,255,0.7);
-}
-
-.projectDesc {
-	float: right;
-}
-
-.projectLink {
-	float: left;
-}
