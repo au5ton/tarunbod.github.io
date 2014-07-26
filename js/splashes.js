@@ -11,5 +11,8 @@ var splashes = {
 	getSplash: function () {
 		var index = Math.floor(Math.random() * this.list.length);
 		return this.list[index];
+	},
+	setSplash: function() {
+		$("#splash").text(this.getSplash());
 	}
 }

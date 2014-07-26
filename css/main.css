@@ -106,10 +106,16 @@
 	text-align: left;
 	color: yellow;
 	text-shadow: 2px 2px #424242;
+	transition: color 500ms;
+	-webkit-transition: color 500ms;
 	-webkit-animation: splash 500ms linear infinite;
 	-moz-animation: splash 500ms linear infinite;
 	-o-animation: splash 500ms linear infinite;
 	animation: splash 500ms linear infinite;
+}
+
+#splash:hover {
+	color: lightcoral;
 }
 
 #splashContainer {
@@ -124,4 +130,8 @@
 a {
 	transition: color 500ms;
 	-webkit-transition: color 500ms;
+}
+
+a:link {
+	color: red;
 }
