@@ -3,12 +3,59 @@
 	src: url("../res/font/Minecraftia.ttf");
 }
 
+@-webkit-keyframes splash {
+	0% {
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
+	50% {
+		-webkit-transform: scale(1.1,1.1) rotate(-10deg);
+		-moz-transform: scale(1.1,1.1) rotate(-10deg);
+		-o-transform: scale(1.1,1.1) rotate(-10deg);
+		transform: scale(1.1,1.1) rotate(-10deg);
+	}
+	100% {
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
+}
+
+@-webkit-keyframes animation {
+	0% {
+		color: red; 
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
+	20% {color: blue;}
+	40% {color: orange;}
+	50% {
+		-webkit-transform: scale(1.1,1.1) rotate(-10deg);
+		-moz-transform: scale(1.1,1.1) rotate(-10deg);
+		-o-transform: scale(1.1,1.1) rotate(-10deg);
+		transform: scale(1.1,1.1) rotate(-10deg);
+	}
+	60% {color: yellow;}
+	80% {color: green;}
+	100% {
+		color: red;
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
+}
+
 body {
-	background-image: url("../res/img/andromeda.jpg");
-	background-color: #000000;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
+   	padding: 0px;
+   	margin: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #container {
@@ -21,8 +68,18 @@ body {
 	padding-bottom: 10px;
 }
 
-#header {
+.header {
 	text-align: center;
+}
+
+#splash {
+	text-align: right;
+	color: yellow;
+	text-shadow: 2px 2px #424242;
+	-webkit-animation: splash 500ms linear infinite;
+	-moz-animation: splash 500ms linear infinite;
+	-o-animation: splash 500ms linear infinite;
+	animation: splash 500ms linear infinite;
 }
 
 #noIndent {
