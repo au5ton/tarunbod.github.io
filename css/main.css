@@ -82,8 +82,8 @@
 }
 
 #container {
-	transition: color 250ms, background-color 250ms;
-	-webkit-transition: color 250ms, background-color 250ms;
+	transition: color 1s, background-color 1s;
+	-webkit-transition: color 1s, background-color 1s;
 	font-family: "Minecraftia";
 	color: white;
 	margin: 50px 50px 50px 50px;
