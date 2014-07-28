@@ -216,7 +216,10 @@ a:active {
 	width: 306.75px;
 	height: 156.75px;
 	float: right;
+	margin-right: 10px;
 }
+
+
 
 .rightInfo {
 	text-align: center;
@@ -229,6 +232,10 @@ a:active {
 	margin: auto;
 	width: 750px;
 	height: 275px;
+}
+
+#ruthlessphysics {
+	height: 200px;
 }
 
 .pImg {
