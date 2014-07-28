@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $("button").button();
     $("#splash").text(splashes.getSplash());
+    $("#container").click(function(e) {e.stopPropogation();});
     $("#container").click(switchTheme);
     setInterval(updateSplash, 1);
 });
