@@ -2,10 +2,8 @@ $(document).ready(function() {
     $("button").button();
     $("#splash").text(splashes.getSplash());
     $("#container").on("click", function(e) {
-      if ($(this).selector() === "#container") {
         e.stopPropogation();
         switchTheme();
-      }
     });
     setInterval(updateSplash, 1);
 });
