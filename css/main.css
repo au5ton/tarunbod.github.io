@@ -218,7 +218,7 @@ a:active {
 	float: right;
 }
 
-#right {
+.rightInfo {
 	text-align: center;
 	width: 250px;
 	margin-top: 50px;
@@ -236,12 +236,19 @@ a:active {
 	margin-left: 10px;
 }
 
-.pInfo {
+.leftInfo {
 	text-align: center;
 	float: right;
 	width: 250px;
 	margin-top: 50px;
 	margin-right: 75px;
+}
+
+.rightInfo {
+	text-align: center;
+	width: 250px;
+	margin-top: 50px;
+	margin-left: 75px;
 }
 
 footer {
