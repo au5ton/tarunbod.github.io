@@ -15,6 +15,7 @@ function updateSplash() {
   }
 }
 
+/*
 function switchTheme() {
   if (dark) {
     $("#container").css("background-color", "rgba(255,255,255,0.7);");
@@ -24,5 +25,21 @@ function switchTheme() {
     $("#container").css("background-color", "rgba(0,0,0,0.7);");
     $("#container").css("color", "white");
     dark = true;
+  }
+} */
+
+function switchTheme( event ) {
+
+  if ( event.target.id === 'container' ) { //the container was clicked, and not a text node
+
+      if (dark) {
+        $("#container").css("background-color", "rgba(255,255,255,0.7);");
+        $("#container").css("color", "black");
+        dark = false;
+      } else {
+        $("#container").css("background-color", "rgba(0,0,0,0.7);");
+        $("#container").css("color", "white");
+        dark = true;
+      }
   }
 }
