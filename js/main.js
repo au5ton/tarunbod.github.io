@@ -1,7 +1,12 @@
 $(document).ready(function() {
     $("button").button();
     $("#splash").text(splashes.getSplash());
-    $("#container").click(switchTheme);
+    $("#container").on("click", function(e) {
+      if ($(this).selector() === "#container") {
+        e.stopPropogation();
+        switchTheme();
+      }
+    });
     setInterval(updateSplash, 1);
 });
 
@@ -15,7 +20,6 @@ function updateSplash() {
   }
 }
 
-/*
 function switchTheme() {
   if (dark) {
     $("#container").css("background-color", "rgba(255,255,255,0.7);");
@@ -26,20 +30,4 @@ function switchTheme() {
     $("#container").css("color", "white");
     dark = true;
   }
-} */
-
-function switchTheme( event ) {
-
-  if ( event.target.id === 'container' ) { //the container was clicked, and not a text node
-
-      if (dark) {
-        $("#container").css("background-color", "rgba(255,255,255,0.7);");
-        $("#container").css("color", "black");
-        dark = false;
-      } else {
-        $("#container").css("background-color", "rgba(0,0,0,0.7);");
-        $("#container").css("color", "white");
-        dark = true;
-      }
-  }
-}
+} 
