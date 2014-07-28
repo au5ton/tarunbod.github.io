@@ -212,6 +212,19 @@ a:active {
 	height: 234px;
 }
 
+#rpImg {
+	width: 306.75px;
+	height: 156.75px;
+	float: right;
+}
+
+#right {
+	text-align: center;
+	width: 250px;
+	margin-top: 50px;
+	margin-left: 75px;
+}
+
 .project {
 	margin: auto;
 	width: 750px;
