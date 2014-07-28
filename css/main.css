@@ -1,7 +1,53 @@
-@font-face {
-	font-family: "Minecraftia";
-	src: url("../res/font/Minecraftia.ttf");
-}
+@font-face {font-family: "Minecraftia";src: url(../res/font/Minecraftia.ttf);}
+
+@font-face {font-family: "octicons";src: url(../res/font/octicons.eot);}
+
+@font-face {font-family: "octicons";src: url(../res/font/octicons.less);}
+
+@font-face {font-family: "octicons";src: url(../res/font/octicons.svg);}
+
+@font-face {font-family: "octicons";src: url(../res/font/octicons.ttf);}
+
+@font-face {font-family: "octicons";src: url(../res/font/octicons.woff);}
+
+@font-face {font-family: "Roboto-Black";src: url(../res/font/Roboto-Black.ttf);}
+
+@font-face {font-family: "Roboto-BlackItalic";src: url(../res/font/Roboto-BlackItalic.ttf);}
+
+@font-face {font-family: "Roboto-Bold";src: url(../res/font/Roboto-Bold.ttf);}
+
+@font-face {font-family: "Roboto-BoldCondensed";src: url(../res/font/Roboto-BoldCondensed.ttf);}
+
+@font-face {font-family: "Roboto-BoldCondensedItalic";src: url(../res/font/Roboto-BoldCondensedItalic.ttf);}
+
+@font-face {font-family: "Roboto-BoldItalic";src: url(../res/font/Roboto-BoldItalic.ttf);}
+
+@font-face {font-family: "Roboto-Condensed";src: url(../res/font/Roboto-Condensed.ttf);}
+
+@font-face {font-family: "Roboto-CondensedItalic";src: url(../res/font/Roboto-CondensedItalic.ttf);}
+
+@font-face {font-family: "Roboto-Italic";src: url(../res/font/Roboto-Italic.ttf);}
+
+@font-face {font-family: "Roboto-Light";src: url(../res/font/Roboto-Light.ttf);}
+
+@font-face {font-family: "Roboto-LightItalic";src: url(../res/font/Roboto-LightItalic.ttf);}
+
+@font-face {font-family: "Roboto-Medium";src: url(../res/font/Roboto-Medium.ttf);}
+
+@font-face {font-family: "Roboto-MediumItalic";src: url(../res/font/Roboto-MediumItalic.ttf);}
+
+@font-face {font-family: "Roboto-Regular";src: url(../res/font/Roboto-Regular.ttf);}
+
+@font-face {font-family: "Roboto-Thin";src: url(../res/font/Roboto-Thin.ttf);}
+
+@font-face {font-family: "Roboto-ThinItalic";src: url(../res/font/Roboto-ThinItalic.ttf);}
+
+@font-face {font-family: "Socialico-Plus";src: url(../res/font/Socialico-Plus.ttf);}
+
+@font-face {font-family: "Socialico";src: url(../res/font/Socialico.ttf);}
+
+
+
 
 @-webkit-keyframes splash {
 	0% {
@@ -84,11 +130,12 @@
 #container {
 	transition: color 1s, background-color 1s;
 	-webkit-transition: color 1s, background-color 1s;
-	font-family: "Minecraftia";
+	font-family: "Roboto-Light";
+	font-size: 18px;
 	color: white;
 	margin: 50px 50px 50px 50px;
 	background-color: rgba(0,0,0,0.7);
-	height: 100%;
+	/* height: 2500px; */
 	text-indent: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -96,8 +143,9 @@
 }
 
 #title {
+	font-family: "Roboto-ThinItalic";
 	width: 750px;
-	height: 250px;
+	height: 150px;
 	margin: auto;
 }
 
@@ -108,6 +156,7 @@
 #splash {
 	text-align: left;
 	color: yellow;
+	font-family: "Minecraftia";
 	text-shadow: 2px 2px #424242;
 	transition: color 500ms;
 	-webkit-transition: color 500ms;
@@ -117,8 +166,8 @@
 	animation: splash 500ms linear infinite;
 }
 
-#splash:hover {
-	color: lightcoral;
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
 }
 
 #splashContainer {
@@ -130,13 +179,20 @@
 	text-indent: 0px;
 }
 
+#info {
+	margin-top: 100px;
+	font-family: "Roboto-Condensed";
+	font-size: 24px;
+}
+
 a {
 	transition: color 500ms;
 	-webkit-transition: color 500ms;
+	text-decoration: none;
 }
 
 a:link {
-	color: red;
+	color: green;
 }
 
 a:visited {
@@ -149,4 +205,36 @@ a:hover {
 
 a:active {
 	color: magenta;
+}
+
+#sccImg {
+	width: 334.5px;
+	height: 234px;
+}
+
+.project {
+	margin: auto;
+	width: 750px;
+	height: 275px;
+	border: 1px solid white;
+}
+
+.pImg {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.pInfo {
+	text-align: center;
+	float: right;
+	width: 250px;
+	margin-top: 50px;
+	margin-right: 75px;
+}
+
+footer {
+	margin-top: 500px;
+	font-family: "Roboto-Medium";
+	font-size: 12px;
+	text-align: center;
 }
