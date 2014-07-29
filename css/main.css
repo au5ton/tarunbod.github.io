@@ -143,7 +143,7 @@
 }
 
 #title {
-	font-family: "Roboto-ThinItalic";
+	font-family: "Roboto-LightItalic";
 	width: 750px;
 	height: 150px;
 	margin: auto;
@@ -168,6 +168,7 @@
 
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+    font-weight: normal;
 }
 
 #splashContainer {
