@@ -127,6 +127,26 @@
 	100% {color: red;}
 }
 
+#linkBar {
+	transition: color 1s, background-color 1s;
+	background-color: rgba(0,0,0,0.7);
+	height: 75px;
+	margin: 0 50px 50px 50px;
+	font-family: "Roboto-Condensed";
+}
+
+#links {
+	width: 500px;
+	height: 50px;
+	padding-top: 15px;
+	margin: auto;
+	text-align: center;
+}
+
+.link {
+	display: inline-block;
+}
+
 #container {
 	transition: color 1s, background-color 1s;
 	-webkit-transition: color 1s, background-color 1s;
