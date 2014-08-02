@@ -2,6 +2,7 @@ $(document).ready(function() {
     $("button").button();
     $("#splash").text(splashes.getSplash());
     $("#container").children().click(function(e) {e.stopPropagation()});
+    $("#linkBar").children().click(function(e) {e.stopPropagation()});
     $("#linkBar").click(switchTheme);
     $("#container").click(switchTheme);
     setTimeout(function() {window.scrollTo(0, 83);}, 10);
