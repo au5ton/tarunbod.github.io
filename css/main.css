@@ -128,8 +128,8 @@
 }
 
 #linkBar {
+	display: none;
 	transition: color 1s, background-color 1s;
-	background-color: rgba(0,0,0,0.7);
 	height: 45px;
 	margin: -15px 50px 50px 50px;
 	font-family: "Roboto-Condensed";
@@ -146,15 +146,21 @@
 	display: inline-block;
 }
 
+#menuBtn {
+	width: 32px;
+	margin-top: 10px auto;
+}
+
 #container {
 	transition: color 1s, background-color 1s;
 	-webkit-transition: color 1s, background-color 1s;
 	font-family: "Roboto-Light";
 	font-size: 18px;
 	color: white;
-	margin: 15px 15px 15px 15px;
+	margin: 50px 15px 15px 15px;
 	background-color: rgba(0,0,0,0.7);
 	/* height: 2500px; */
+	border-radius: 10px;
 	text-indent: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -236,17 +242,15 @@ a:active {
 #rpImg {
 	width: 306.75px;
 	height: 156.75px;
-	float: right;
 	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
 }
 
-
-
-.rightInfo {
+.info {
+	margin: 50px;
 	text-align: center;
 	width: 250px;
-	margin-top: 50px;
-	margin-left: 75px;
 }
 
 .project {
@@ -255,28 +259,14 @@ a:active {
 	height: 275px;
 }
 
-#ruthlessphysics {
-	height: 200px;
-}
-
 .pImg {
 	margin-top: 15px;
 	margin-left: 10px;
-}
-
-.leftInfo {
-	text-align: center;
 	float: right;
-	width: 250px;
-	margin-top: 50px;
-	margin-right: 75px;
 }
 
-.rightInfo {
-	text-align: center;
-	width: 250px;
-	margin-top: 50px;
-	margin-left: 75px;
+.inline {
+	display: inline-block;
 }
 
 footer {

@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#linkBar").children().click(function(e) {e.stopPropagation()});
     $("#linkBar").click(switchTheme);
     $("#container").click(switchTheme);
-    setTimeout(function() {window.scrollTo(0, 83);}, 10);
+    $("#menuBtn").click(function() {$("#linkBar").toggle("slide")});
     setInterval(updateSplash, 1);
 });
 
