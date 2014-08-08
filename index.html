@@ -2,31 +2,35 @@
 <html>
 <head>
 	<title>FirstWorldAnarchy - Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/bg.js"></script>
 	<script type="text/javascript" src="js/splashes.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="res/img/icon.png">
 	<link rel="shortcut icon" href="res/img/icon.png">
 </head>
 <body id="gradient">
-	<div id="container">
-		<div id="menuBtn">&#9776;</div>
-		<div id="linkBar">
-			<div id="links">
-				<p class="link"><a href="biblio.html">Resources</a></p>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<p class="link"><a href="index.html">Home</a></p>
-			</div>
-		</div>
+	<div id='cssmenu' class="bgswitch">
+		<ul>
+		   <li class='active'><div class="before bgswitch"></div><a href='index.html'><span>Home</span></a></li>
+		   <li><div class="before bgswitch"></div><a href='biblio.html'><span>Resources</span></a></li>
+		   <li><div class="before bgswitch"></div><a href='projects.html'><span>Projects</span></a></li>
+		   <li class='last'><div class="before bgswitch"></div><a href='#'><span>Contact</span></a></li>
+		</ul>
+	</div>
+	<div id="container" class="bgswitch">
 		<div id="title">
 			<h1 class="header">FirstWorldAnarchy || Java/Web Developer</h1>
 			<br>
 			<div id="splashContainer">
-				<h3 id="splash" onclick="splashes.setSplash();">Do you even javascript, bro?</h3>
+				<h3 id="splash" onclick="splashes.setSplash();">Enable Javascript please?</h3>
 			</div>
 		</div>
 		<div id="info">
