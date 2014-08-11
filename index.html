@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>FirstWorldAnarchy - Developer</title>
-	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/bg.js"></script>
-	<script type="text/javascript" src="js/splashes.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="res/img/icon.png">
-	<link rel="shortcut icon" href="res/img/icon.png">
-</head>
-<body id="gradient">
-	<div id='cssmenu' class="bgswitch">
-		<ul>
-		   <li class='active'><div class="before bgswitch"></div><a href='index.html'><span>Home</span></a></li>
-		   <li><div class="before bgswitch"></div><a href='biblio.html'><span>Resources</span></a></li>
-		   <li><div class="before bgswitch"></div><a href='projects.html'><span>Projects</span></a></li>
-		   <li class='last'><div class="before bgswitch"></div><a href='#'><span>Contact</span></a></li>
-		</ul>
-	</div>
-	<div id="container" class="bgswitch">
-		<div id="title">
-			<h1 class="header">FirstWorldAnarchy || Java/Web Developer</h1>
-			<br>
-			<div id="splashContainer">
-				<h3 id="splash" onclick="splashes.setSplash();">Enable Javascript please?</h3>
-			</div>
-		</div>
-		<div id="info">
-			<p>Hi! My name is FirstWorldAnarchy. I'm a 13 year old Java and web developer, Currently learning C++. I like playing games (such as minecraft), reading, and learning about space. This is my website, where I will be posting my latest projects and applications. Enjoy your stay! (Note: Try clicking on the background.)</p>
-		</div>
-		<br>
-		<h1>my projects</h2>
-		<br>
-		<div id="scc" class="project">
-			<img src="res/img/scc.PNG" id="sccImg" class="pImg inline">
-			<p class="info leftInfo inline">
-				Summon Command Creator. Pretty much does what it says on the tin. You can download it <a href="downloads/SummonCommandCreator.jar">here</a
-				>. It works on Mac, Windows, and maybe even Linux. Who knows? If you'd like to see the source, <a href="https://github.com/FirstWorldAnarchy/SummonCommandCreator">here</a> it is.
-			</p>
-		</div>
-		<br>
-		<br>
-		<div id="ruthlessphysics" class="project">
-			<p class="info rightInfo inline">
-				I helped code a website by my friend MacPhage. I didn't do much, but his website is pretty cool. <a href="http://ruthlessphysics.com">Here</a
-				> it is.
-			</p>
-			<img src="res/img/rp.PNG" id="rpImg" class="pImg inline">
-		</div>
-
-
-	<footer>
-		<a href="biblio.html">Resources</a>
-		<p>Website created by Tarun Boddupalli (FirstWorldAnarchy) &copy; 2014</p>
-		<p>My Email: <a href="mailto:tarunbgamer@gmail.com">tarunbgamer@gmail.com</a></p>
-		<p>Twitter: <a href="http://twitter.com/javaftw">@JavaFTW</a></p>
-	</footer>
-	</div>
-</body>
+	<head>
+		<title>FirstWorldAnarchy</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<style type="text/css">
+			@font-face {
+				font-family: "RobotoBlack";
+				src: url(res/font/Roboto-Black.ttf);
+			}
+			body {
+				background-image: url(res/img/indexBg.jpg);
+				background-repeat: no-repeat;
+				background-position: fixed;
+			}
+			p {
+				font-family: "RobotoBlack";
+				color: white;
+			}
+			#hello {
+				margin-top: -50px;
+				font-size: 24px;
+				-webkit-transition: margin 1s;
+				transition: margin-top 1s;
+			}
+			#proceed {
+				opacity: 0;
+				-webkit-transition: opacity 1s;
+				transition: opacity 1s;
+			}
+			.img {
+				-webkit-transition: opacity 1s;
+				transition: opacity 1s;
+				opacity: 0;
+			}
+			a {
+				text-decoration: none;
+				color: red;
+				-webkit-transition: color 1s;
+				transition: color 1s;
+			}
+			a:hover {
+				color: orange;
+			}
+			a:active {
+				color: yellow;
+			}
+			a:visited {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<p id="hello">Hello</p>
+			<p class="img">My name is </p>
+			<img class="img" src="res/img/logo.png"/>
+			<p id="proceed"><a href="main.html">Proceed to the website</a></p>	
+		</center>
+		
+		<script type="text/javascript">
+		setTimeout(function() {
+			// $("#hello").toggle({effect:["slide","fade"],direction:"up",duration:1000});	
+			$("#hello").css("margin-top","150px");
+		}, 1000);
+		setTimeout(function() {
+			// $("#hello").toggle({effect:["slide","fade"],direction:"up",duration:1000});	
+			$(".img").css("opacity","1");
+		}, 3500);
+		setTimeout(function() {
+			$("#proceed").css("opacity","1");
+		}, 7000);
+		// setTimeout(function() {
+		// 	$("p").toggle({effect:["slide","fade"],direction:"up",duration:1000});	
+		// }, 1000);
+		// setTimeout(function() {
+		// 	$("p").toggle({effect:["slide","fade"],direction:"up",duration:1000});	
+		// }, 1000);
+		</script>
+	</body>
 </html>
