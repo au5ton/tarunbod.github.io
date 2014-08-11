@@ -127,19 +127,24 @@
 	100% {color: red;}
 }
 
+body {
+	background-image: url(../res/img/indexBg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
 .bgswitch {
 	background-color: rgba(0,0,0,0.7);
 }
 
 #container {
-	transition: color 1s, background-color 1s;
-	-webkit-transition: color 1s, background-color 1s;
+	background-color: rgba(255,255,255,0.3);
 	font-family: "Roboto-Light";
 	font-size: 18px;
-	color: white;
+	color: black;
 	margin: 50px 15px 15px 15px;
 	/* height: 2500px; */
+	border: 1px solid black;
 	border-radius: 10px;
 	text-indent: 25px;
 	padding-left: 10px;
@@ -197,22 +202,19 @@ a {
 	transition: color 500ms;
 	-webkit-transition: color 500ms;
 	text-decoration: none;
-}
-
-a:link {
-	color: green;
+	color: red;
 }
 
 a:visited {
-	color: orange;
+	color: red;
 }
 
 a:hover {
-	color: cyan;
+	color: orange;
 }
 
 a:active {
-	color: magenta;
+	color: yellow;
 }
 
 #sccImg {

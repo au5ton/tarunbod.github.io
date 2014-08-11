@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(255,255,255,0.3);
   margin: auto;
   width: 470px;
   -webkit-transition: background-color 1s;

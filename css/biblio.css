@@ -46,7 +46,11 @@
 
 @font-face {font-family: "Socialico";src: url(../res/font/Socialico.ttf);}
 
-
+body {
+	background-image: url(../res/img/indexBg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
 
 @-webkit-keyframes splash {
@@ -132,9 +136,10 @@
 	-webkit-transition: color 1s, background-color 1s;
 	font-family: "Roboto-Light";
 	font-size: 18px;
-	color: white;
+	color: black;
 	margin: 50px 50px 50px 50px;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid black;
 	/* height: 2500px; */
 	text-indent: 25px;
 	padding-left: 10px;
