@@ -133,19 +133,15 @@ body {
 	background-attachment: fixed;
 }
 
-.bgswitch {
-	background-color: rgba(0,0,0,0.7);
-}
-
 #container {
 	background-color: rgba(255,255,255,0.3);
 	font-family: "Roboto-Light";
 	font-size: 18px;
 	color: black;
-	margin: 50px 15px 15px 15px;
+	margin: 50px 50px 50px 50px;
 	/* height: 2500px; */
 	border: 1px solid black;
-	border-radius: 10px;
+	border-radius: 5px;
 	text-indent: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
