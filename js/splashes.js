@@ -10,7 +10,8 @@ var splashes = {
 		"Animation!",
 		"WORA!",
 		"Java!",
-		"Tiny!"
+		"Tiny!",
+		"Hosted on GitHub!"
 	],
 	getSplash: function () {
 		var index = Math.floor(Math.random() * this.list.length);
