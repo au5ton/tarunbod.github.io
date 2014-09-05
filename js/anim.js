@@ -20,7 +20,7 @@ function bounceAnimation() {
 	  .applyTo($("#container"));
 }
 
-function showInfoOnScroll() {
+function showInfo() {
 	$("#info").animate({opacity: 1});
 	var bounce = new Bounce();
 	bounce.scale({
@@ -32,7 +32,7 @@ function showInfoOnScroll() {
 	showInfoAnimation = false;
 }
 
-function showProjectsOnScroll() {
+function showProjects() {
 	var bounce = new Bounce();
 	$(".project").animate({opacity: 1});
 	bounce.scale({
