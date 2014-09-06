@@ -1,7 +1,6 @@
 var splashes = {
 	list: [
-		"Uses jQuery!",
-		"Uses Bootstrap!",
+		"Powered by jQuery!",
 		"There's no place like 127.0.0.1!",
 		"window.alert(\"Hello, World!\")",
 		"HTML5!",
@@ -11,7 +10,10 @@ var splashes = {
 		"WORA!",
 		"Java!",
 		"Tiny!",
-		"Hosted on GitHub!"
+		"Hosted on GitHub!",
+		"No WebGL!",
+		"Bounce.js!",
+		"Exclamation points!",
 	],
 	getSplash: function () {
 		var index = Math.floor(Math.random() * this.list.length);

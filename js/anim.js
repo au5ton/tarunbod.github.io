@@ -18,6 +18,7 @@ function bounceAnimation() {
 	    delay: 30,
 	  })
 	  .applyTo($("#container"));
+	  $("#container").animate({opacity: 1});
 }
 
 function showInfo() {

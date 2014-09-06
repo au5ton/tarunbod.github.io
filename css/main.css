@@ -100,6 +100,7 @@ body {
 	font-family: "Roboto-Light";
 	font-size: 18px;
 	color: black;
+	opacity: 0;
 	margin: 50px 50px 50px 50px;
 	/* height: 2500px; */
 	border: 1px solid black;
@@ -180,11 +181,18 @@ a:active {
 	height: 238;
 }
 
+#mrcImg {
+	width: 241.5px;
+	height: 238;
+}
+
 #rpImg {
 	width: 306.75px;
 	height: 156.75px;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	float: left;
+}
+
+#zombieImg {
 	float: left;
 }
 
@@ -202,7 +210,8 @@ a:active {
 }
 
 .pImg {
-	margin-left: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
 	float: right;
 	position: relative;
 	top: 50%;
