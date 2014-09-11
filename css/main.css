@@ -80,31 +80,47 @@
 }
 
 @keyframes animation {
-	0% {color: red;}
+	0% {
+		color: red; 
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
 	20% {color: blue;}
 	40% {color: orange;}
+	50% {
+		-webkit-transform: scale(1.1,1.1) rotate(-10deg);
+		-moz-transform: scale(1.1,1.1) rotate(-10deg);
+		-o-transform: scale(1.1,1.1) rotate(-10deg);
+		transform: scale(1.1,1.1) rotate(-10deg);
+	}
 	60% {color: yellow;}
 	80% {color: green;}
-	100% {color: red;}
+	100% {
+		color: red;
+		-webkit-transform: scale(1,1) rotate(-10deg);
+		-moz-transform: scale(1,1) rotate(-10deg);
+		-o-transform: scale(1,1) rotate(-10deg);
+		transform: scale(1,1) rotate(-10deg);
+	}
 }
 
 body {
-	background-image: url(../res/img/indexBg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	overflow-x: hidden;
 }
 
 #container {
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.7);
 	font-family: "Roboto-Light";
 	font-size: 18px;
 	color: black;
-	opacity: 0;
-	margin: 50px 50px 50px 50px;
+	margin: 100px 50px 50px 50px;
 	/* height: 2500px; */
 	border: 1px solid black;
-	border-radius: 5px;
+	border-radius: 3px;
 	text-indent: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -116,10 +132,12 @@ body {
 	width: 750px;
 	height: 150px;
 	margin: auto;
+	opacity: 0.3;
 }
 
 .header {
 	text-align: center;
+	opacity: 0.3;
 }
 
 #splash {
@@ -194,12 +212,17 @@ a:active {
 
 #zombieImg {
 	float: left;
+	margin-left: 100px;
 }
 
 .info {
 	margin: 50px;
 	text-align: center;
 	width: 250px;
+}
+
+#zombieInfo {
+	float: right;
 }
 
 .project {

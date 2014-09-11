@@ -1,10 +1,8 @@
 $(document).ready(function() {
-    $("button").button();
-    setTimeout(bounceAnimation, 250);
+    showTitle();
     if (document.title !== "Resources") {
-    	setTimeout(showInfo, 2500);
     	$(window).bind("scroll", function() {
-		    if ($(this).scrollTop() >= 500 && showProjectsAnimation) {
+		    if ($(this).scrollTop() >= ($("#projectsHeader").position().top - 100) && showProjectsAnimation) {
 		        showProjects();
 		    }
 		});
