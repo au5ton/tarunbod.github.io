@@ -109,6 +109,11 @@
 body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+        background: scroll;
+        webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;     
 	overflow-x: hidden;
 }
 
@@ -252,4 +257,3 @@ footer {
 	font-family: "Roboto-Bold";
 	text-align: center;
 }
-
