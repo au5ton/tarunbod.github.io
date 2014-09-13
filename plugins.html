@@ -8,18 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.theme.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/dark-nav.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="" id="widthStylesheet"/>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bounce.min.js"></script>
+	<script type="text/javascript" src="js/width-corrector.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/anim.js"></script>
 	<script type="text/javascript" src="js/resources.js"></script>
 	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="res/img/icon.png">
 	<link rel="shortcut icon" href="res/img/icon.png">
 </head>
-<body onload="resources.bgImages.setBgImage();">
+<body onload="resources.bgImages.setBgImage(); setLink();">
 
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">

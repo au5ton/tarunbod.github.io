@@ -13,7 +13,7 @@ function showTitle() {
 	}).applyTo($("#title"));
 	var bounce2 = new Bounce();
 	bounce2.scale({
-		from: {x: 10, y: 10},
+		from: {x: 7, y: 7},
 		to: {x: 1, y: 1},
 		duration: 1000,
 		stiffness: 3
@@ -43,4 +43,14 @@ function showProjects() {
 		stiffness: 2
 	}).applyTo($(".project"));
 	showProjectsAnimation = false;
+}
+
+function bounceOutPage() {
+	var bounce = new Bounce();
+	bounce.scale({
+		from: {x: 1, y: 1},
+		to: {x: 0, y: 0},
+		duration: 500,
+		stiffness: 3
+	}).applyTo($("body"));
 }
