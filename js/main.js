@@ -7,7 +7,4 @@ $(document).ready(function() {
 		    }
 		});
 	}
-	$(".bounceOutLink").click(function() {
-		bounceOutPage();
-	});
 });

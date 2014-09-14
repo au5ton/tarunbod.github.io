@@ -1,56 +1,53 @@
 var showProjectsAnimation = true;
-var showInfoAnimation = true;
+
+var titleBounce = new Bounce();
+titleBounce.translate({
+	from: {x: 300, y: -300},
+	to: {x: 0, y: 0},
+	duration: 1000,
+	stiffness: 3
+});
+
+var headerBounce = new Bounce();
+headerBounce.scale({
+	from: {x: 7, y: 7},
+	to: {x: 1, y: 1},
+	duration: 1000,
+	stiffness: 3
+});
+
+var infoBounce = new Bounce();
+infoBounce.scale({
+	from: {x: 0, y: 0},
+	to: {x: 1, y: 1},
+	duration: 1000,
+	stiffness: 2
+});
+
+var projectsBounce = new Bounce();
+projectsBounce.scale({
+	from: {x: 0, y: 0},
+	to: {x: 1, y: 1},
+	duration: 1000,
+	stiffness: 2
+});
 
 function showTitle() {
-	$(".header").animate({opacity: 1});
-	$("#title").animate({opacity: 1});
-	var bounce = new Bounce();
-	bounce.translate({
-		from: {x: 300, y: -300},
-		to: {x: 0, y: 0},
-		duration: 1000,
-		stiffness: 3
-	}).applyTo($("#title"));
-	var bounce2 = new Bounce();
-	bounce2.scale({
-		from: {x: 7, y: 7},
-		to: {x: 1, y: 1},
-		duration: 1000,
-		stiffness: 3
-	}).applyTo($(".header"));
-	setTimeout(showInfo, 1000);
+	$(".header, #title").animate({opacity: 1});
+	titleBounce.applyTo($("#title"));
+	headerBounce.applyTo($(".header"));
+	if (document.title !== "Resources") {
+		setTimeout(showInfo, 1000);
+	}
 }
 
 function showInfo() {
 	$("#info").animate({opacity: 1});
-	var bounce = new Bounce();
-	bounce.scale({
-		from: {x: 0, y: 0},
-		to: {x: 1, y: 1},
-		duration: 1000,
-		stiffness: 2
-	}).applyTo($("#info"));
-	showInfoAnimation = false;
+	infoBounce.applyTo($("#info"));
 }
 
 function showProjects() {
-	var bounce = new Bounce();
 	$(".project").animate({opacity: 1});
-	bounce.scale({
-		from: {x: 0, y: 0},
-		to: {x: 1, y: 1},
-		duration: 1000,
-		stiffness: 2
-	}).applyTo($(".project"));
+	projectsBounce.applyTo($(".project"));
 	showProjectsAnimation = false;
-}
-
-function bounceOutPage() {
-	var bounce = new Bounce();
-	bounce.scale({
-		from: {x: 1, y: 1},
-		to: {x: 0, y: 0},
-		duration: 500,
-		stiffness: 3
-	}).applyTo($("body"));
 }
