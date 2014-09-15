@@ -1,14 +1,14 @@
-@font-face {font-family: "Roboto-BlackItalic";src: url(../res/font/Roboto-BlackItalic.ttf);}
+@font-face {font-family: "Roboto-BlackItalic"; src: url("../res/font/Roboto-BlackItalic.ttf");}
 
-@font-face {font-family: "Roboto-Bold";src: url(../res/font/Roboto-Bold.ttf);}
+@font-face {font-family: "Roboto-Bold"; src: url("../res/font/Roboto-Bold.ttf");}
 
-@font-face {font-family: "Roboto-Italic";src: url(../res/font/Roboto-Italic.ttf);}
+@font-face {font-family: "Roboto-Italic"; src: url("../res/font/Roboto-Italic.ttf");}
 
-@font-face {font-family: "Roboto-Light";src: url(../res/font/Roboto-Light.ttf);}
+@font-face {font-family: "Roboto-Light"; src: url("../res/font/Roboto-Light.ttf");}
 
-@font-face {font-family: "Roboto-Regular";src: url(../res/font/Roboto-Regular.ttf);}
+@font-face {font-family: "Roboto-Regular"; src: url("../res/font/Roboto-Regular.ttf");}
 
-@font-face {font-family: "Minecraftia";src: url(../res/font/Minecraftia.ttf);}
+@font-face {font-family: "Minecraftia"; src: url("../res/font/Minecraftia.ttf");}
 
 @-webkit-keyframes splash {
 	0% {
@@ -109,7 +109,7 @@
 body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-        background: scroll;
+	overflow-x: hidden;
 }
 
 #container {
@@ -132,12 +132,11 @@ body {
 	width: 750px;
 	height: 150px;
 	margin: auto;
-	opacity: 0.3;
+	opacity: 0;
 }
 
 .header {
 	text-align: center;
-	opacity: 0.3;
 }
 
 #splash {
@@ -169,7 +168,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #info {
-	margin-top: 100px;
 	text-align: center;
 	font-size: 24px;
 	opacity: 0;
@@ -194,35 +192,10 @@ a:active {
 	color: yellow;
 }
 
-#sccImg {
-	width: 241.5px;
-	height: 238;
-}
-
-#mrcImg {
-	width: 241.5px;
-	height: 238;
-}
-
-#rpImg {
-	width: 306.75px;
-	height: 156.75px;
-	float: left;
-}
-
-#zombieImg {
-	float: left;
-	margin-left: 100px;
-}
-
 .info {
 	margin: 50px;
 	text-align: center;
 	width: 250px;
-}
-
-#zombieInfo {
-	float: right;
 }
 
 .project {
@@ -236,10 +209,17 @@ a:active {
 	margin-left: 25px;
 	margin-right: 25px;
 	float: right;
-	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
 
 .inline {
@@ -247,7 +227,7 @@ a:active {
 }
 
 footer {
-	margin-top: 500px;
+	margin-top: 50px;
 	font-size: 12px;
 	font-family: "Roboto-Bold";
 	text-align: center;

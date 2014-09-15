@@ -36,9 +36,7 @@ function showTitle() {
 	$(".header, #title").animate({opacity: 1});
 	titleBounce.applyTo($("#title"));
 	headerBounce.applyTo($(".header"));
-	if (document.title !== "Resources") {
-		setTimeout(showInfo, 1000);
-	}
+	setTimeout(showInfo, 1000);
 }
 
 function showInfo() {
