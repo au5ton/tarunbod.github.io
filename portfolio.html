@@ -48,27 +48,40 @@
 		    <div id="info">
 		    	<p>These are my projects that I have worked on in the past or currently am working on. As I said, the applications aren't too too useful, since they were developed out of boredom and to automate a task I do very often. I also make Bukkit Plugins, which is a way of modding the minecraft server platform. If you haven't heard of them, go check them out <a href="http://bukkit.org">over here.</a> With that out of the way, here are my projects!</p>
 		    </div>
+		    <br>
+		    <br>
+		    <div id="projects">
+		    	<div class="project" style="background-image: url(res/img/scc.PNG)"></div>
+		    	<div class="project" style="background-image: url(res/img/rp.PNG)"></div>
+		    	<div class="project" style="background-image: url(res/img/mrc.PNG)"></div>
+		    	<div class="project" style="background-image: url(res/img/itemHelper.PNG)"></div>
+		    	<div class="project" style="background-image: url(res/img/zombie.PNG)"></div>
+		    </div>
+		    
+			<!-- <div id="ruthlessphysics" class="project">
+				<p class="info right inline">
+					I helped code a website by my friend MacPhage. I didn't do much, but his website is pretty cool. <a href="http://ruthlessphysics.com" >Here</a
+					> it is.
+				</p>
+				<img src="res/img/rp.PNG" class="pImg inline left" width="306.75" height="156.75">
+			</div>
+			<div id="mrc" class="project">
+				<img src="res/img/mrc.PNG" class="pImg inline right" width="233" height="188">
+				<p class="info left inline">
+					Minecraft Resource Calculator (Beta) tells you how much of each item you'll need if you want to create large sacle projects with lots of materials. You'll never have to craft too many of the same item ever again. Download it <a href="downloads/MinecraftResourceCalculator.jar">here</a
+					>. Source code coming soon!
+				</p>
+			</div> -->
+
 	    </div>
-		<!-- <div id="scc" class="project">
-			<img src="res/img/scc.PNG" class="pImg inline right" width="241.5" height="238">
-			<p class="info inline left">
-				Summon Command Creator. Pretty much does what it says on the tin. You can download it <a href="downloads/SummonCommandCreator.jar" >here</a
-				>. It works on Mac, Windows, and maybe even Linux. Who knows? If you'd like to see the source, <a href="https://github.com/FirstWorldAnarchy/SummonCommandCreator">here</a> it is.
-			</p>
-		</div>
-		<div id="ruthlessphysics" class="project">
-			<p class="info right inline">
-				I helped code a website by my friend MacPhage. I didn't do much, but his website is pretty cool. <a href="http://ruthlessphysics.com" >Here</a
-				> it is.
-			</p>
-			<img src="res/img/rp.PNG" class="pImg inline left" width="306.75" height="156.75">
-		</div>
-		<div id="mrc" class="project">
-			<img src="res/img/mrc.PNG" class="pImg inline right" width="233" height="188">
-			<p class="info left inline">
-				Minecraft Resource Calculator (Beta) tells you how much of each item you'll need if you want to create large sacle projects with lots of materials. You'll never have to craft too many of the same item ever again. Download it <a href="downloads/MinecraftResourceCalculator.jar">here</a
-				>. Source code coming soon!
-			</p>
-		</div> -->
 	</body>
+
+	<script type="text/javascript">
+	$(".project").mouseenter(function() {
+		scaleUp.applyTo($(this));
+	});
+	$(".project").mouseleave(function() {
+		scaleDown.applyTo($(this));
+	});
+	</script>
 </html>
