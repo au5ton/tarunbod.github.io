@@ -45,9 +45,6 @@ var resources = {
 		setBgImage: function() {
 	        document.body.style.backgroundImage = new Trianglify({noiseIntensity: 0}).generate(document.body.clientWidth, this.height()).dataUrl;	        
 		}
-	},
-	projectDescriptions: [
-		
-	];
+	}
 }
 
