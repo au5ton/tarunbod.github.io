@@ -43,22 +43,6 @@ lightSpeedIn.translate({
 	stiffness: 5
 });
 
-var scaleUp = new Bounce();
-scaleUp.scale({
-	from: {x: 1, y: 1},
-	to: {x: 5, y: 5},
-	duration: 1000,
-	stiffness: 3
-});
-
-var scaleDown = new Bounce();
-scaleDown.scale({
-	from: {x: 10, y: 10},
-	to: {x: 1, y: 1},
-	duration: 1000,
-	stiffness: 3
-})
-
 function showNavbar() {
 	lightSpeedIn.applyTo($(".navbar"));
 	setTimeout(showTitle, 500);

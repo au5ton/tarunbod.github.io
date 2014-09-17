@@ -14,7 +14,11 @@ var resources = {
 			"Hosted on GitHub!",
 			"No WebGL!",
 			"Bounce.js!",
+			"Trianglify.js!",
 			"Exclamation points!",
+			"Javascript Libraries!",
+			"Polygons!",
+			"Gradients!"
 		],
 		getSplash: function () {
 			return this.list[Math.floor(Math.random() * this.list.length)];
@@ -35,12 +39,15 @@ var resources = {
 		}
 	},
 	bgImages: {
-		getBgImage: function() {
-			return "url(res/img/bg/download_" + Math.floor(Math.random() * 11 + 1) + ".png)";
+		height: function() {
+			return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
 		},
 		setBgImage: function() {
-			$("body").css("background-image", this.getBgImage());
+	        document.body.style.backgroundImage = new Trianglify({noiseIntensity: 0}).generate(document.body.clientWidth, this.height()).dataUrl;	        
 		}
-	}
+	},
+	projectDescriptions: [
+		
+	];
 }
 

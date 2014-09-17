@@ -3,13 +3,17 @@
 		<title>Portfolio</title>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/dark-nav.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/bounce.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="js/trianglify.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/anim.js"></script>
 		<script type="text/javascript" src="js/resources.js"></script>
@@ -41,6 +45,8 @@
 	      </div>
 	    </div>
 
+	    <div id="overlay"></div>
+
 	    <div id="container">
 	    	<div id="title">
 		    	<h1 class="header">My Projects</h1>
@@ -51,11 +57,11 @@
 		    <br>
 		    <br>
 		    <div id="projects">
-		    	<div class="project" style="background-image: url(res/img/scc.PNG)"></div>
-		    	<div class="project" style="background-image: url(res/img/rp.PNG)"></div>
-		    	<div class="project" style="background-image: url(res/img/mrc.PNG)"></div>
-		    	<div class="project" style="background-image: url(res/img/itemHelper.PNG)"></div>
-		    	<div class="project" style="background-image: url(res/img/zombie.PNG)"></div>
+		    	<div class="project p1" style="background-image: url(res/img/scc.PNG)"></div>
+		    	<div class="project p2" style="background-image: url(res/img/rp.PNG)"></div>
+		    	<div class="project p3" style="background-image: url(res/img/mrc.PNG)"></div>
+		    	<div class="project p4" style="background-image: url(res/img/itemHelper.png)"></div>
+		    	<div class="project p5" style="background-image: url(res/img/zombie.png)"></div>
 		    </div>
 		    
 			<!-- <div id="ruthlessphysics" class="project">
@@ -74,14 +80,10 @@
 			</div> -->
 
 	    </div>
-	</body>
 
-	<script type="text/javascript">
-	$(".project").mouseenter(function() {
-		scaleUp.applyTo($(this));
-	});
-	$(".project").mouseleave(function() {
-		scaleDown.applyTo($(this));
-	});
-	</script>
+	    <div id="projectOverlay">
+	    	<p style="text-align: right; margin=top: 10px"><span id="exit">X &nbsp;</span></p>
+	    	<p>This is an overlay test.</p>
+	    </div>
+	</body>
 </html>

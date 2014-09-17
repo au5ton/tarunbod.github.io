@@ -108,7 +108,7 @@
 
 body {
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-position: center;
 	overflow-x: hidden;
 }
 
@@ -241,4 +241,32 @@ footer {
 	font-size: 12px;
 	font-family: "Roboto-Bold";
 	text-align: center;
+}
+
+#overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: none;
+}
+
+#projectOverlay {
+	width: 500px;
+	height: 300px;
+	position: fixed;
+	display: none;
+	z-index: 11;
+	background-color: yellow;
+	border-radius: 10px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    border-radius: 5px;
+    text-align: center;
 }
