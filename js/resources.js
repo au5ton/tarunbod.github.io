@@ -39,12 +39,19 @@ var resources = {
 		}
 	},
 	bgImages: {
+		pattern: new Trianglify({noiseIntensity: 0}),
 		height: function() {
 			return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
 		},
 		setBgImage: function() {
-	        document.body.style.backgroundImage = new Trianglify({noiseIntensity: 0}).generate(document.body.clientWidth, this.height()).dataUrl;	        
+	        document.body.style.backgroundImage = this.pattern.generate(document.body.clientWidth, this.height()).dataUrl;
 		}
+	},
+	projectDescs: {
+		p1: "",
+		p2: "I helped code a website by my friend MacPhage. I didn't do much, but his website is pretty cool. <a href=\"http://austinj.net\">Here</a> it is.",
+		p3: "",
+		p4: "",
+		p5: "",
 	}
 }
-

@@ -3,6 +3,7 @@
 		<title>Portfolio</title>
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
@@ -14,9 +15,9 @@
 		<script type="text/javascript" src="js/bounce.min.js"></script>
 		<script src="http://d3js.org/d3.v3.min.js"></script>
 		<script src="js/trianglify.min.js"></script>
+		<script type="text/javascript" src="js/resources.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/anim.js"></script>
-		<script type="text/javascript" src="js/resources.js"></script>
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="res/img/icon.png">
 		<link rel="shortcut icon" href="res/img/icon.png">
 	</head>
@@ -28,8 +29,8 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
-	            <li class="active"><a href="index.html">Home</a></li>
-	            <li><a href="portfolio.html">Portfolio</a></li>
+	            <li><a href="index.html" class="delayLink">Home</a></li>
+	            <li class="active"><a href="#">Portfolio</a></li>
 	            <li class="dropdown">
 		          <a href="#" class="dropdown-toggle " data-toggle="dropdown">Contact <span class="caret"></span></a>
 		          <ul class="dropdown-menu navbar-inverse" role="menu">
@@ -39,7 +40,7 @@
 		        </li>
 	          </ul>
 	          <ul class="nav navbar-nav navbar-right">
-	          	<li><a href="biblio.html">Attributions</a></li>
+	          	<li><a href="biblio.html" class="delayLink">Attributions</a></li>
 	          </ul>
 	        </div>
 	      </div>
@@ -48,11 +49,10 @@
 	    <div id="overlay"></div>
 
 	    <div id="container">
-	    	<div id="title">
-		    	<h1 class="header">My Projects</h1>
-		    </div>
+		    <h1 class="header">My Projects</h1>
+		    <br><br><br>
 		    <div id="info">
-		    	<p>These are my projects that I have worked on in the past or currently am working on. As I said, the applications aren't too too useful, since they were developed out of boredom and to automate a task I do very often. I also make Bukkit Plugins, which is a way of modding the minecraft server platform. If you haven't heard of them, go check them out <a href="http://bukkit.org">over here.</a> With that out of the way, here are my projects!</p>
+		    	<p>These are my projects that I have worked on in the past or currently am working on. As I said, the applications aren't too too useful, since they were developed out of boredom and to automate a task I do very often. I also make Bukkit Plugins, which is a way of modding the minecraft server platform. If you haven't heard of them, go check them out <a href="http://bukkit.org" class="delayLink">over here.</a> With that out of the way, here are my projects!</p>
 		    </div>
 		    <br>
 		    <br>
@@ -82,8 +82,10 @@
 	    </div>
 
 	    <div id="projectOverlay">
-	    	<p style="text-align: right; margin=top: 10px"><span id="exit">X &nbsp;</span></p>
-	    	<p>This is an overlay test.</p>
+	    	<button id="exit">X</span></button>
+	    	<p id="desc"></p>
 	    </div>
 	</body>
+
+	<script>$("button").button();</script>
 </html>

@@ -125,10 +125,10 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
+	opacity: 0;
 }
 
 #title {
-	font-family: "Roboto-Italic";
 	width: 750px;
 	height: 150px;
 	margin: auto;
@@ -136,6 +136,8 @@ body {
 }
 
 .header {
+	font-family: "Roboto-Italic";
+	opacity: 0;
 	text-align: center;
 }
 
@@ -262,11 +264,14 @@ footer {
 	z-index: 11;
 	background-color: yellow;
 	border-radius: 10px;
-    position: fixed;
-    top: 50%; 
-    left: 50%;
-    margin-top: -100px;
-    margin-left: -150px;
-    border-radius: 5px;
-    text-align: center;
+	text-align: center;
 }
+
+#projectOverlay > p {
+	text-align: center;
+}
+/*
+button {
+	text-align: center;
+	margin: 5px 5px;
+}*/
