@@ -298,6 +298,12 @@ footer {
 		width: 150px;
 		margin: auto;
 	}
+	h2 {
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 14px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
