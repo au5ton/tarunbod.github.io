@@ -2,8 +2,6 @@ var resources = {
 	splashes: {
 		list: [
 			"Powered by jQuery!",
-			"There's no place like 127.0.0.1!",
-			"window.alert(\"Hello, World!\")",
 			"HTML5!",
 			"CSS3!",
 			"PHP Free!",
@@ -44,7 +42,7 @@ var resources = {
 			return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
 		},
 		setBgImage: function() {
-	        document.body.style.backgroundImage = this.pattern.generate(document.body.clientWidth, this.height() + 100).dataUrl;
+	        document.body.style.backgroundImage = this.pattern.generate(document.body.clientWidth + 100, this.height() + 100).dataUrl;
 		}
 	},
 	projectDescs: {

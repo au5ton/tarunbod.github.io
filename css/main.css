@@ -125,6 +125,7 @@ body {
 	padding-right: 10px;
 	padding-bottom: 10px;
 	opacity: 0;
+	overflow: auto;
 }
 
 #title {
@@ -146,6 +147,7 @@ body {
 	font-family: "Minecraftia";
 	font-size: 24px;
 	text-shadow: 2px 2px #424242;
+	margin-right: 25px;
 	transition: color 500ms;
 	-webkit-transition: color 500ms;
 	-webkit-animation: splash 500ms linear infinite;
