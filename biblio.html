@@ -35,10 +35,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html" class="delayLink">Home</a></li>
+            <li><a href="portfolio.html" class="delayLink">Portfolio</a></li>
             <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <p class="caret"></p></a>
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></p></a>
 	          <ul class="dropdown-menu navbar-inverse" role="menu">
 	            <li><a href="http://twitter.com/JavaFTW">Twitter</a></li>
 	            <li><a href="mailto:tarunbgamer@gmail.com?subject=firstworldanarchy.github.io">Email</a></li>
@@ -58,11 +58,11 @@
 
 		<div id="info">
 			<h2>Here's all of the libraries I used to make this website.</h2>
-			<h3><span><a href="http://jquery.com">jQuery</a> - to make javascript easier</span></h3>
-			<h3><span><a href="http://bouncejs.com">Bounce.js</a> - to make cool animations</span></h3>
-			<h3><span><a href="http://dragdropsite.github.io/waterpipe.js/">Waterpipe.js</a> - the backgrounds</span></h3>
-			<h3><span><a href="http://getbootstrap.com">Bootstrap</a> - the navbar and for a better website overall</span></h3>
-			<h3><span><a href="http://bootstrap3-menu.codedorigin.com/#">Bootstrap NavBar Generator</a> - the dark navbar styles</span></h3>
+			<h3><span class="hoverBounce"><a href="http://jquery.com" class="delayLink">jQuery</a> - to make javascript easier</span></h3>
+			<h3><span class="hoverBounce"><a href="http://jqueryui.com" class="delayLink">jQuery UI</a> - jQuery addon</span></h3>
+			<h3><span class="hoverBounce"><a href="http://bouncejs.com" class="delayLink">Bounce.js</a> - to make cool animations</span></h3>
+			<h3><span class="hoverBounce"><a href="http://getbootstrap.com" class="delayLink">Bootstrap</a> - the navbar and for a better website overall</span></h3>
+			<h3><span class="hoverBounce"><a href="http://bootstrap3-menu.codedorigin.com/#" class="delayLink">Bootstrap NavBar Generator</a> - the dark navbar styles</span></h3>
 		</div>
 		<footer>
 			<a href="index.html">Go Back</a>
@@ -83,7 +83,7 @@
 		duration: 1000,
 		stiffness: 1
 	});
-	$("span").mouseenter(function() {
+	$(".hoverBounce").mouseenter(function() {
 		hoverBounce.applyTo($(this));
 	});
 	</script>

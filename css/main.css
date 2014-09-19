@@ -273,13 +273,14 @@ footer {
 
 @media (max-width: 768px) {
 	#container {
-		font-size: 12px;
-		color: black;
 		margin: 50px 25px 25px 25px;
 	}
 	#title {
 		width: 500px;
 		height: 100px;
+	}
+	#info {
+		font-size: 12px;
 	}
 	.header {
 		font-size: 16px;
