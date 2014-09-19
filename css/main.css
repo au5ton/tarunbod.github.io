@@ -202,8 +202,7 @@ a:active {
 }
 
 #projects {
-	width: 500px;
-	margin: auto;
+	width: auto;
 }
 
 .project {
@@ -273,17 +272,10 @@ footer {
 	}
 	#info {
 		font-size: 16px;
-	}
-	#splash {
-		font-size: 16px;
-		text-align: center;
+		margin-top: -50px;
 	}
 	#splashContainer {
-		margin-top: 0;
-		width: 
-	}
-	#splashContainer:before {
-		content: "\a";
+		display: none;
 	}
 	.header {
 		font-size: 18px;
@@ -295,8 +287,7 @@ footer {
 		height: 25px;
 	}
 	#projects {
-		width: 150px;
-		margin: auto;
+		width: auto;
 	}
 	h2 {
 		font-size: 16px;
