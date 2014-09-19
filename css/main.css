@@ -274,7 +274,7 @@ footer {
 
 @media (max-width: 768px) {
 	#container {
-		margin: 50px 25px 25px 25px;
+		margin: 100px 25px 25px 25px;
 	}
 	#title {
 		width: 500px;
@@ -285,6 +285,13 @@ footer {
 	}
 	#splash {
 		font-size: 16px;
+		text-align: center;
+	}
+	#splashContainer {
+		margin-top: 0;
+	}
+	#splashContainer:before {
+		content: "\a";
 	}
 	.header {
 		font-size: 18px;
