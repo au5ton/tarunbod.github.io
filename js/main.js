@@ -56,6 +56,8 @@ $(document).ready(function() {
 			case "project p5":
 				overlayText = resources.projectDescs.p5;
 				break;
+			default:
+				break;	
 		}
 		$("#desc").html(overlayText);
 	});
