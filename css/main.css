@@ -270,8 +270,23 @@ footer {
 #projectOverlay > p {
 	text-align: center;
 }
-/*
-button {
-	text-align: center;
-	margin: 5px 5px;
-}*/
+
+@media (max-width: 768px) {
+	#container {
+		font-size: 12px;
+		color: black;
+		margin: 50px 25px 25px 25px;
+	}
+	#title {
+		width: 500px;
+		height: 100px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
