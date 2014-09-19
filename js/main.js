@@ -19,8 +19,12 @@ $(document).ready(function() {
     	})
     }
 
+    var currentWidth = document.body.clientWidth;
+
     $(window).resize(function() {
-    	resources.bgImages.setBgImage();
+    	if (document.body.clientWidth - currentWidth > 100) {
+    		resources.bgImages.setBgImage();	
+    	}
     });
 
     $(".delayLink").click(function(e) {
