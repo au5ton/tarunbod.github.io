@@ -18,6 +18,8 @@ $(".project").click(function(e) {
 		case "p5":
 			overlayText = projectDescs.p5;
 			break;
+		case "p6":
+			overlayText = projectDescs.p6;
 	}
 	$("#projectsOverlay").html("<p>" + overlayText + "</p>");
 });
@@ -30,4 +32,5 @@ var projectDescs = {
 	p3: "",
 	p4: "",
 	p5: "",
+	p6: "",
 }
