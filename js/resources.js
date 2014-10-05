@@ -1,55 +1,30 @@
 var resources = {
-	splashes: {
-		list: [
-			"Powered by jQuery!",
-			"HTML5!",
-			"CSS3!",
-			"PHP Free!",
-			"Animation!",
-			"WORA!",
-			"Java!",
-			"Tiny!",
-			"Hosted on GitHub!",
-			"No WebGL!",
-			"Bounce.js!",
-			"Trianglify.js!",
-			"Exclamation points!",
-			"Javascript Libraries!",
-			"Polygons!",
-			"Gradients!"
-		],
-		getSplash: function () {
-			return this.list[Math.floor(Math.random() * this.list.length)];
-		},
-		setSplash: function() {
-			var splash = this.getSplash();
-			if (splash === "Animation!") {
-				$("#splash").css({"-webkit-animation": "animation 1s linear infinite, splash 500ms linear infinite", "animation" : "animation 1s linear infinite, splash 500ms linear infinite"});
-			} else {
-				if (splash === "Tiny!") {
-					$("#splash").css("font-size", "8px");
-				} else {
-					$("#splash").css("font-size", "24px");
-				}
-				$("#splash").css({"-webkit-animation": "splash 500ms linear infinite", "animation" : "splash 500ms linear infinite"});
+	colors: {
+		randomHex: function() {
+			var hex = '#';
+			var colors = ["1","2","3","4","A","B","C","D"];
+			for (var i = 0; i < 6; i++) {
+				hex += colors[Math.floor(Math.random() * 6)];
 			}
-			$("#splash").text(splash);
-		}
-	},
-	bgImages: {
-		pattern: new Trianglify({noiseIntensity: 0}),
-		height: function() {
-			return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
+			return hex;
 		},
-		setBgImage: function() {
-	        document.body.style.backgroundImage = this.pattern.generate(document.body.clientWidth + 100, this.height() + 100).dataUrl;
+		randomHexArray: function() {
+			var randomLength = Math.floor(Math.random() * 10 + 4);
+			var array = [];
+			for (var i = 0; i < randomLength; i++) {
+				array.push(this.randomHex());
+			}
+			return array;
 		}
+	}
+}
+
+resources.bg = {
+	pattern: new Trianglify({noiseIntensity: 0, x_gradient: resources.colors.randomHexArray(), y_gradient: resources.colors.randomHexArray(), cellsize: 500}),
+	height: function() {
+		return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
 	},
-	projectDescs: {
-		p1: "",
-		p2: "I helped code a website by my friend MacPhage. I didn't do much, but his website is pretty cool. <a href=\"http://austinj.net\">Here</a> it is.",
-		p3: "",
-		p4: "",
-		p5: "",
+	setBgImage: function() {
+        document.body.style.backgroundImage = this.pattern.generate(document.body.clientWidth + 100, this.height() + 100).dataUrl;
 	}
 }

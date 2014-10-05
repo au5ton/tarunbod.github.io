@@ -1,74 +1,125 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>FirstWorldAnarchy</title>
-    <meta charset="utf-8">
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/dark-nav.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bounce.min.js"></script>
-	<script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="js/trianglify.min.js"></script>
-	<script type="text/javascript" src="js/resources.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/anim.js"></script>
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="res/img/icon.png">
-	<link rel="shortcut icon" href="res/img/icon.png">
-</head>
-<body onload="resources.splashes.setSplash(); resources.bgImages.setBgImage();">
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+    <title>FirstWorldAnarchy</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/dark-nav.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- END CSS -->
+
+    <!-- JS -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bounce.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/anim.js"></script>
+    <script src="js/main.js"></script>
+    <!-- END JS-->
+  </head>
+  <body>
+  	<!-- NAVBAR -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 	            <span class="sr-only">Toggle navigation</span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 		    </button>
-          <a class="navbar-brand" href="#">FirstWorldAnarchy</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="portfolio.html" class="delayLink">Portfolio</a></li>
-            <li class="dropdown">
-	          <a href="#" class="dropdown-toggle " data-toggle="dropdown">Contact <span class="caret"></span></a>
-	          <ul class="dropdown-menu navbar-inverse" role="menu">
-	            <li><a href="http://twitter.com/JavaFTW" >Twitter</a></li>
-	            <li><a href="mailto:tarunbgamer@gmail.com">Email</a></li>
-	          </ul>
-	        </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-          	<li><a href="biblio.html">Attributions</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+		      <a class="navbar-brand" href="#">FirstWorldAnarchy</a>
+		    </div>
+		    <div class="collapse navbar-collapse">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="#">Home</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="http://twitter.com/Javaftw">Twitter</a></li>
+		            <li><a href="mailto:tarunbgamer@gmail.com">Email</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="attributions.html">Attributions</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- MAIN CONTENT -->
 
-	<div id="container">
-		<div id="title">
-			<h1 class="header">FirstWorldAnarchy</h1>
-			<br>
-			<div id="splashContainer">
-				<h3 id="splash" onclick="resources.splashes.setSplash();">Enable Javascript!</h3>
+		<div class="container">
+			<div class="jumbotron content-container text-center header-box">
+				
+					<br>
+					<span class="h1 header-info opacity-0">Hello.</span>
+					<br><br>
+					<span class="h2 header-info opacity-0">My name is Tarun Boddupalli.</span>
+					<br><br>
+					<span class="h3 header-info opacity-0">And I'm a Java/Web Developer.</span>
+					<br><br>
+			</div><br>
+			<div class="row">
+				<div class="col-10 content-container text-center main-content opacity-0 col-offset-1">
+					<h2>about me</h2>
+					<p class="info">Hi! My name is Tarun and I'm a 14 year old Java and web developer, Currently learning C++. I like playing video games, watching TV, and sometimes read in my spare time. This is my website, where I will be posting my latest projects and applications.<br><br>
+					Most of my projects are just desktop applications that  I've created to make my life a little bit easier. With that said, most of the things you'll find here may not be too useful for you. But if you're interested, you can download them and they'll work on any OS (thanks to Java). I try to make my software available to as many people as possible, as well as supply the source of them so other people can learn from it. Even this website is <a href="http://github.com/FirstWorldAnarchy/FirstWorldAnarchy.github.io">open source</a>. My software is completely safe to download, and if you feel suspicious, you can checkout the source code of my applications on <a href="http://github.com/FirstWorldAnarchy">GitHub.</a><br><br>
+					Now here are the applications I keep talking about!</p>
+				</div>
 			</div>
+			<br><br><br><br>
+			<div class="row">
+				<div class="col-10 text-center main-content content-container opacity-0 col-offset-1">
+					<h2>my projects</h2>
+				</div>
+			</div>
+			<br>
+			<div class="row opacity-0 content-container projects">
+				<div class="project-module col-10 text-center col-offset-1">
+					<h3 class="project-header italic">Summon Command Creator</h3>
+					<br>
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<p class="info project-info">
+								Summon Command Creator was my first application for desktop. It was made with JavaFX and is basically a minecraft helper tool. It was based on the idea of someone else's (which you can find <a href="http://youtube.com/watch?v=3UUzjG-BQXQ">here</a>) and was a template application for me to get to know the JavaFX API. You can download it <a href="downloads/SummonCommandCreator.jar">here</a>.
+							</p>
+						</div>
+						<br><br><br>
+						<div class="col-md-6 col-centered text-center">
+							<img src="res/img/scc.PNG" class="project-image">
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="row opacity-0 content-container projects">
+				<div class="project-module col-10 text-center col-offset-1">
+					<h3 class="project-header italic"><a href="http://austinj.net">austinj.net</a></h3>
+					<br>
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img src="res/img/austin.ico" class="project-image">
+						</div>
+						<br>
+						<div class="col-md-6 text-center">
+							<p class="info project-info">
+								My friend <a href="http://twitter.com/MacPhage">MacPhage</a> was the one who got me back into web development. I started out by helping him with some CSS. Then I started this website, and here we are. Anyway, you can find his website by clicking the link above.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
 		</div>
-		<br><br><br>
-		<div id="info">
-			<p>Hi! My name is FirstWorldAnarchy. I'm a 13 year old Java and web developer, Currently learning C++. I like playing video games, watching TV, and learning about space in my spare time. This is my website, where I will be posting my latest projects and applications.<br><br>
-			Most of my projects are just desktop applications that  I've created to make my life a little bit easier. With that said, most of the things you'll find here may not be too useful. But they do run on Java, so they're operating system independent. I do not create malicious software, and if you suspect me of doing so, you can checkout the source code of my appliations on <a href="http://github.com/FirstWorldAnarchy" class="delayLink">GitHub.</a><br><br>
-			Now that you have a brief understanding of what this website may be about, you are free to explore.</p>
-		</div>
-	<footer id="footer">
-		<a href="biblio.html" class="delayLink">Resources</a>
-		<p>Website coded by Tarun Boddupalli (FirstWorldAnarchy) &copy; 2014</p>
-	</footer>
-	</div>
-</body>
+
+		<!-- END MAIN CONTENT -->
+  </body>
 </html>
