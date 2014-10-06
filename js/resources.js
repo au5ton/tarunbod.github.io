@@ -2,9 +2,15 @@ var resources = {
 	colors: {
 		randomHex: function() {
 			var hex = '#';
-			var colors = ["1","2","3","4","A","B","C","D"];
-			for (var i = 0; i < 6; i++) {
-				hex += colors[Math.floor(Math.random() * 6)];
+			if (document.title !== "Error 404") {
+				var colors = ["1","2","3","4","A","B","C","D"];
+				for (var i = 0; i < 6; i++) {
+					hex += colors[Math.floor(Math.random() * colors.length)];
+				}
+			} else {
+				hex += Math.random() > 0.5 ? "4" : "C";
+				hex += Math.random() > 0.5 ? "4" : "C";
+				hex += Math.random() > 0.5 ? "1234" : "0000";
 			}
 			return hex;
 		},

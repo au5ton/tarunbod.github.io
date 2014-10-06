@@ -49,6 +49,14 @@ body {
 	}
 }
 
+.body-404 {
+	height: 100%;
+}
+
+.container-404 {
+	margin-top: 9%;
+}
+
 /* UTILITY CLASSES */
 
 .opacity-0 {
@@ -57,12 +65,4 @@ body {
 
 .italic {
 	font-style: italic;
-}
-
-.body-404 {
-	height: 100%;
-}
-
-.container-404 {
-	margin-top: 10%
 }
