@@ -20,6 +20,16 @@ body {
 	border-radius: 3px;
 }
 
+a {
+    color: #cdedce;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #abcbac;
+    text-decoration: underline;
+}
+
 .info {
 	font-size: 18px;
 }
