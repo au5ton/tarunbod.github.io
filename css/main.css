@@ -10,18 +10,19 @@
 
 * {
 	font-family: "Roboto-Regular";
+	color: #ffffff;
 }
 
 body {
 	height: 1250px;
 }
 .content-container {
-	background-color: rgba(76,175,255,0.7);
+	background-color: rgba(50,50,50,0.7);
 	border-radius: 3px;
 }
 
 a {
-    color: #cdedce;
+    color: #4cafff;
     text-decoration: none;
 }
 
@@ -42,10 +43,12 @@ a:hover, a:focus {
 .project-image {
 	width: 192px;
 	height: 192px;
+	border-radius: 5px;
 }
 
 .project-module {
 	padding-bottom: 50px;
+	margin-top: 50px;
 }
 
 .project-header {

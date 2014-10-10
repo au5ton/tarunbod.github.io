@@ -6,8 +6,8 @@
 .navbar { background-image: none; }
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
 .navbar { border-color: #080808}
-.navbar .navbar-brand { color: #CCCCCC}
-.navbar .navbar-brand:hover { color: #FFFFFF}
+.navbar .navbar-brand { color: #4CAFFF}
+.navbar .navbar-brand:hover { color: #3983BF}
 .navbar .navbar-nav>li>a { color: #CCCCCC}
 .navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a:focus { color: #FFFFFF}
 .navbar .navbar-nav>.active>a,.navbar .navbar-nav>.open>a, .navbar .navbar-nav>.open>a:hover, .navbar .navbar-nav>.open>a:focus { color: #FFFFFF}
