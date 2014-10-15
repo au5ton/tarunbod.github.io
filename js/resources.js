@@ -3,7 +3,7 @@ var resources = {
 		randomHex: function() {
 			var hex = '#';
 			if (document.title !== "Error 404") {
-				var colors = ["1","2","3","4","A","B","C","D"];
+				var colors = ["C","D","E","F"];
 				for (var i = 0; i < 6; i++) {
 					hex += colors[Math.floor(Math.random() * colors.length)];
 				}
