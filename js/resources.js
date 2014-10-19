@@ -3,7 +3,7 @@ var resources = {
 		randomHex: function() {
 			var hex = '#';
 			if (document.title !== "Error 404") {
-				var colors = ["C","D","E","F"];
+				var colors = ["4","f"];
 				for (var i = 0; i < 6; i++) {
 					hex += colors[Math.floor(Math.random() * colors.length)];
 				}
@@ -26,7 +26,8 @@ var resources = {
 }
 
 resources.bg = {
-	pattern: new Trianglify({noiseIntensity: 0, x_gradient: resources.colors.randomHexArray(), y_gradient: resources.colors.randomHexArray(), cellsize: 500}),
+	opacity: 0,
+	pattern: new Trianglify({noiseIntensity: 0, x_gradient: resources.colors.randomHexArray(), y_gradient: resources.colors.randomHexArray(), cellsize: 1000, fillOpacity: this.opacity, strokeOpacity: this.opacity}),
 	height: function() {
 		return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight,document.body.offsetHeight, document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight);
 	},
