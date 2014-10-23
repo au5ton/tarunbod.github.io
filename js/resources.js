@@ -2,7 +2,12 @@ var resources = {
 	colors: {
 		randomHex: function() {
 			var hex = '#';
-			if (document.title !== "Error 404") {
+			var date = new Date();
+			if (date.getMonth() === 9 && date.getDate() > 20) {
+				return Math.random() > 0.5 ? "#f72" : "#000" ;
+			} else if (date.getMonth === 11 && date.getDate() > 10) {
+				return Math.random() > 0.5 ? "#0f0" : "#f00";
+			} else if (document.title !== "Error 404") {
 				var colors = ["4","f"];
 				for (var i = 0; i < 6; i++) {
 					hex += colors[Math.floor(Math.random() * colors.length)];
