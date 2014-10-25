@@ -6,7 +6,7 @@ $(document).ready(function() {
 	} else if (date.getMonth === 11 && date.getDate() > 10) {
 		$("#navbar-brand").html("Happy Holidays!");
 	} 
-	if (date.getHours() + 1 < 12) {
+	if (date.getHours() + 1 <= 12) {
 		$(".content-container").addClass("light");
 	} else {
 		$(".content-container").addClass("dark");
