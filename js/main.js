@@ -11,6 +11,9 @@ $(document).ready(function() {
 	} else {
 		$(".content-container").addClass("dark");
 	}
+	$("#downloadsBox").css({
+		"margin-top": ((resources.bg.height() - $(this).height()) / 2) + "px"
+	});
 	$(".col-10").addClass("col-xs-10 col-sm-10 col-md-10 col-lg-10");
 	$(".col-8").addClass("col-xs-8 col-sm-8 col-md-8 col-lg-8");
 	$(".col-6").addClass("col-xs-6 col-sm-6 col-md-6 col-lg-6");

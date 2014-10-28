@@ -14,10 +14,22 @@ bounceIn.scale({
 	stiffness: 5
 });
 
+var bounceDown = new Bounce();
+bounceDown.translate({
+	from: {x: 0, y: -500},
+	to: {x: 0, y: 0},
+	duration: 1000,
+	stiffness: 5
+});
+
 var anim = {
 	showJumbotron: function() {
-		$(".header-box").animate({opacity: 1});
-		bounceIn.applyTo($(".header-box"));
+		if (document.title !== "Downloads") {
+			$(".header-box").animate({opacity: 1});
+			bounceIn.applyTo($(".header-box"));
+		} else {
+			this.showDownloadsBox();
+		}
 		this.showInfo();
 	},
 	bounceUpInfo: function(elem) {
@@ -41,5 +53,8 @@ var anim = {
 	},
 	show: function() {
 		this.showJumbotron();
+	},
+	showDownloadsBox: function() {
+		bounceDown.applyTo($("#downloadsBox"));
 	}
 }
