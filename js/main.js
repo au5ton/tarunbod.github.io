@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var date = new Date();
 	if (date.getMonth() === 9 && date.getDate() > 20) {
 		$("#navbar-brand").html("Happy Halloween!");
-	} else if (date.getMonth === 11 && date.getDate() > 10) {
+	} else if (date.getMonth() === 11 && date.getDate() > 10) {
 		$("#navbar-brand").html("Happy Holidays!");
 	} 
 	if (date.getHours() + 1 <= 12) {
