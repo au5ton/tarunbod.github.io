@@ -46,7 +46,7 @@ var anim = {
 		setTimeout(this.showMainContent, 1000);
 	},
 	showMainContent: function() {
-		if (document.title === "FirstWorldAnarchy") {
+		if (document.title === "Tarun Boddupalli") {
 			$(".main-content, .projects").animate({opacity: 1});
 			bounceIn.applyTo($(".main-content, .projects"));
 		}
