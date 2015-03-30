@@ -1,3 +1,95 @@
+<<<<<<< HEAD
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+* {
+	font-family: "Dosis";
+	color: #ffffff;
+}
+
+body {
+	height: 1250px;
+}
+
+.content-container {
+	border-radius: 3px;
+}
+
+a {
+    color: #4cafff;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #abcbac;
+    text-decoration: underline;
+}
+
+.info {
+	font-size: 18px;
+}
+
+.project-info {
+	width: 300px;
+	margin: auto;
+}
+
+.project-image {
+	width: 192px;
+	height: 192px;
+	border-radius: 5px;
+}
+
+.project-module {
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+.project-header {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.project-info {
+		width: 200px;
+		margin: none;
+	}
+}
+
+.body-404 {
+	height: 100%;
+}
+
+.footer {
+	width: 100%;
+	margin: 0 0;
+}
+
+/* UTILITY CLASSES */
+
+.opacity-0 {
+	opacity: 0;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.border-radius-none {
+	border-radius: 0px;
+}
+
+.right {
+	right: 0;
+	left: auto;
+}
+
+.dark {
+	background-color: rgba(50,50,50,0.5);
+}
+
+.light {
+	background-color: rgba(200,200,200,0.5);
+=======
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
 html, body {
@@ -51,4 +143,5 @@ p {
 .footer {
     background-color: rgb(38, 38, 38);
     color: white;
+>>>>>>> indev
 }

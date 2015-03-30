@@ -1,4 +1,4 @@
-FirstWorldAnarchy.github.io
+javaftw.github.io
 ===========================
 
 My Personal Website
