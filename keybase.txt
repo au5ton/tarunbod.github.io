@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/tarunb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://tarunbod.github.io
+  * I am tarunb (https://keybase.io/tarunb) on keybase.
+  * I have a public key with fingerprint 3CE7 4D1A AFC2 2096 DE9B  D3E6 90BD 4557 58DC 03AD
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "3ce74d1aafc22096de9bd3e690bd455758dc03ad",
+            "host": "keybase.io",
+            "key_id": "90bd455758dc03ad",
+            "kid": "0101e207b7531f80ad7ca97644511b50b0d353dd1950313bfed80cce2e03a507a74e0a",
+            "uid": "20d5ce14ebbb45b50d9fe4361b7bae19",
+            "username": "tarunb"
+        },
+        "service": {
+            "hostname": "tarunbod.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1429136359,
+    "expire_in": 157680000,
+    "prev": "74f1b35533d835b597a613947ac24a900942a5f805695ce1b69d9300c55dc1cd",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.8
+Comment: https://keybase.io/crypto
+
+yMIaAnicbZJbSBVBGMfPUc+JLCV6CelCLt0ks5mdnd0zJ4mQLpImCtVLkszszB43
+7expd49mUVAWZYURWYYPXSDooSzoSkWlpYX5ZCRBQT0klVBZdHmwC81aPQTNyzDf
+9///Zr4/05OTGcoOk3UHwXCm2hHu716WDq0pevl6q8Ic3qTEtyp1Ymyz7GRCuCnX
+TvpKXEGmMDQOKbVMVQVE54IwjoROAOMaxgaOcRMgypVCpdbxAofEMOqJItuRNXmo
+sbms/kdfN9YAEEChAoMZGEErBig3TEoMXdMwhAwDBjjCiHNIMEAQMUvwGDBNoQqJ
+wcCghiYAlbj0GE4FHJsCaoIxpmHp58QSGtIhMxgVkARCT7hJulFItU/ddJIp2woV
+WWuwTREEEMzxT9/hRQnbr02z3zOlXMd3TKde9mt9P+XFA7/flAoMjYLV/EHVMDvJ
+ZZbS0SBcz3aSShxKpenbARtqKoFIR5gUKmJzynZFjR0osKHHgFzBPaJBIg3Nggxh
+jBCPITkRMagOEdEMaqoaJQAQTaVYJod1EozOdMIJAsDEmJvQDJL2xKako8SRfCZN
+SKRnJ5LUT7tC2Xa3qzorFM4ORSMZwW8IZY+f9PePLLox7sf0a+DslYueUsfzdoSP
+lQ/t7255enP4/Zvek/qTkhXtI9WLyy+1Hw6PTq1/mj88e8PXRDqv73uxHVvWennw
+wiW160FmcUflkua9kRUT522esra5anflmyNzrr7tbFl/O2vph87Igqzm3Ot5+Y2f
+F3Zvr6i4VxXNV4pikZzi3Gol62HXpKtNjyIznTIrMVpfsHx62f137TM+e3dO3NwV
+bYw/aW0deVfq9rU9exE/EynZ09aTMcIn0Kr9M0pb59+1TqdyJm655dsDarT4udV7
+buVoU+Lr0paywfOnZv20Pw19w6sL+ofe964aODQ3ujw3d9eXj92PJu+sriuZJl7t
+6xvsOX7g6ONfO6glSQ==
+=l6V3
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tarunb
+
+==================================================================
