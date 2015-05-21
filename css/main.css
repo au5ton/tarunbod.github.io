@@ -6,15 +6,21 @@ html, body {
     font-family: "Abel", Helvetica, Arial;
 }
 
-.header {
-    background: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-        ),
-        url(../res/img/background-space.jpeg);
+.earth {
+    background: url(../res/img/background-space.jpeg);
     background-size: cover;
+    background-attachment: fixed;
     color: #ccc;
+}
+
+.bg-primary {
+    background-color: #222;
+}
+
+@media (max-width: 768px) {
+    .earth {
+        background-attachment: scroll;
+    }
 }
 
 .header, .full {
@@ -49,6 +55,50 @@ p {
 }
 
 .footer {
-    background-color: rgb(38, 38, 38);
+    background-color: #333;
     color: white;
+}
+
+.init-opacity {
+    opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+    transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 40%, 0);
+    transform: translate3d(0, 40%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
