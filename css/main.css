@@ -20,6 +20,7 @@ html, body {
 @media (max-width: 768px) {
     .earth {
         background-attachment: scroll;
+        background-size: cover;
     }
 }
 

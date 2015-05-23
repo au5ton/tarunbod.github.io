@@ -26,13 +26,13 @@ function setupColumns() {
 function fadeInUp() {
   setTimeout(function() {
     $(".name").addClass("animated fadeInUp");
-  }, 500);
+  }, 1000);
 
   setTimeout(function() {
     $(".prof").addClass("animated fadeInUp");
-  }, 1000);
+  }, 1500);
   
   setTimeout(function() {
     $(".contact-anchor-button").addClass("animated fadeInUp");
-  }, 2000);
+  }, 2500);
 }
